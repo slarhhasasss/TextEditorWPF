@@ -1,0 +1,15 @@
+C:\Users\dimik\source\repos\ExampleWpf\ExampleWpf\bin\Debug\ExampleWpf.exe.config
+C:\Users\dimik\source\repos\ExampleWpf\ExampleWpf\bin\Debug\ExampleWpf.exe
+C:\Users\dimik\source\repos\ExampleWpf\ExampleWpf\bin\Debug\ExampleWpf.pdb
+C:\Users\dimik\source\repos\ExampleWpf\ExampleWpf\obj\Debug\ExampleWpf.csprojAssemblyReference.cache
+C:\Users\dimik\source\repos\ExampleWpf\ExampleWpf\obj\Debug\MainWindow.g.cs
+C:\Users\dimik\source\repos\ExampleWpf\ExampleWpf\obj\Debug\App.g.cs
+C:\Users\dimik\source\repos\ExampleWpf\ExampleWpf\obj\Debug\ExampleWpf_MarkupCompile.cache
+C:\Users\dimik\source\repos\ExampleWpf\ExampleWpf\obj\Debug\ExampleWpf_MarkupCompile.lref
+C:\Users\dimik\source\repos\ExampleWpf\ExampleWpf\obj\Debug\MainWindow.baml
+C:\Users\dimik\source\repos\ExampleWpf\ExampleWpf\obj\Debug\ExampleWpf.g.resources
+C:\Users\dimik\source\repos\ExampleWpf\ExampleWpf\obj\Debug\ExampleWpf.Properties.Resources.resources
+C:\Users\dimik\source\repos\ExampleWpf\ExampleWpf\obj\Debug\ExampleWpf.csproj.GenerateResource.cache
+C:\Users\dimik\source\repos\ExampleWpf\ExampleWpf\obj\Debug\ExampleWpf.csproj.CoreCompileInputs.cache
+C:\Users\dimik\source\repos\ExampleWpf\ExampleWpf\obj\Debug\ExampleWpf.exe
+C:\Users\dimik\source\repos\ExampleWpf\ExampleWpf\obj\Debug\ExampleWpf.pdb
