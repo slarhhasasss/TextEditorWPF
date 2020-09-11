@@ -8,23 +8,23 @@
         Title="Programm" Height="500" Width="800">
 
     <DockPanel>
-        
+
         <Menu DockPanel.Dock="Top">
 
             <MenuItem x:Name="menuFile" Header="File">
-                
+
                 <MenuItem x:Name="newFileMenuItem" Header="New..." Click="newFileMenuItem_Click">
                     <MenuItem.Icon>
                         <Image Source="./Resources/iconCreateFile.ico"/>
                     </MenuItem.Icon>
                 </MenuItem>
-                
+
                 <MenuItem x:Name="openFileMenuItem" Header="Open..." Click="openFileMenuItem_Click">
                     <MenuItem.Icon>
                         <Image Source="./Resources/iconOpenFile.ico"/>
                     </MenuItem.Icon>
                 </MenuItem>
-                
+
                 <MenuItem x:Name="saveFileMenuItem" Header="Save" Click="saveFileMenuItem_Click">
                     <MenuItem.Icon>
                         <Image Source="./Resources/iconSaveFile.ico"/>
@@ -34,7 +34,7 @@
 
             <MenuItem x:Name="menuEdit" Header="Edit">
                 <MenuItem x:Name="selectFontMenuItem" Header="Choose font">
-                    
+
                     <MenuItem x:Name="font1menuItem" Header="Times New Roman" IsCheckable="True" 
                               StaysOpenOnClick="True" Click="font1menuItem_Click"/>
 
@@ -52,10 +52,10 @@
                                  PreviewTextInput="fontSizeTextBox_PreviewTextInput"
                                  PreviewKeyDown="fontSizeTextBox_PreviewKeyDown"/>
                     </Grid>
-                    
-                    
+
+
                 </MenuItem>
-                
+
                 <Separator/>
                 <MenuItem x:Name="copyMenuItem" Header="Copy" Command="ApplicationCommands.Copy" InputGestureText="ctrl+c"/>
                 <MenuItem x:Name="pasteMenuItem" Header="Paste" Command="ApplicationCommands.Paste" InputGestureText="ctrl+v"/>
@@ -64,7 +64,62 @@
             </MenuItem>
         </Menu>
 
-        <TextBox x:Name="textBox" Margin="0,0,0,0"/>
+        <ToolBarTray DockPanel.Dock="Top">
+            <ToolBar>
+                <Button x:Name="btnSaveToolBar" ToolTip="Save" Click="saveFileMenuItem_Click">
+                    <Image Source="./Resources/iconSaveFile.ico" Height="30"/>
+                </Button>
+                <Button x:Name="btnOpenToolBar" ToolTip="Open" Click="openFileMenuItem_Click">
+                    <Image Source="./Resources/iconOpenFile.ico" Height="30"/>
+                </Button>
+                <Button x:Name="btnCutToolBar" ToolTip="Cut" Command="ApplicationCommands.Cut">
+                    <Image Source="./Resources/iconCut.ico" Height="30"/>
+                </Button>
+                <Button x:Name="btnPasteToolBar" ToolTip="Paste" Command="ApplicationCommands.Paste">
+                    <Image Source="./Resources/iconPaste.ico" Height="30"/>
+                </Button>
+                <Button x:Name="btnCopyToolBar" ToolTip="Copy" Command="ApplicationCommands.Copy">
+                    <Image Source="./Resources/iconCopy.ico" Height="30"/>
+                </Button>
+                <Label>Font size:</Label>
+                <ComboBox x:Name="fontSizeComboBox" SelectionChanged="fontSizeComboBox_SelectionChanged">
+
+                </ComboBox>
+
+            </ToolBar>
+        </ToolBarTray>
+
+
+
+        <TabControl x:Name="tabControl">
+            <TabItem x:Name="tabControlItemReg" Header="Registration">
+                <Grid Background="#999999" >
+                    <Label Content="Registration" HorizontalAlignment="Center" 
+                           FontFamily="Cambria" Foreground="#426587"
+                           FontSize="24" Height="40" Width="300" VerticalAlignment="Top" Margin="216,28,272,0" />
+                    <Label Content="Login:" FontSize="24" Foreground="#aa11AA" Width="300" Height="50" Margin="216,68,272,266"/>
+                    <TextBox TextWrapping="Wrap" x:Name="textBoxLogin" Background="#ffffff" Width="300" Height="50" FontSize="20" 
+                               HorizontalAlignment="Center"  Margin="216,123,272,211" />
+                    <PasswordBox x:Name="textBoxPassword" Background="#ffffff" Width="300" Height="50" FontSize="20" 
+                               HorizontalAlignment="Center" Margin="216,223,272,111"/>
+                    <Label Content="Password:" FontSize="24" Foreground="#aa11AA" Width="300" Height="50" Margin="216,173,272,161"/>
+                    <StackPanel Margin="216,286,272,48" Orientation="Horizontal">
+                        <Button x:Name="btnRegistrationUser" Content="Reg" HorizontalAlignment="Left"   FontSize="20"
+                            VerticalAlignment="Top" Width="100"  Click="btnRegistrationUser_Click"/>
+                        
+                        <Button x:Name="btnEnterUser" Content="Sign In" HorizontalAlignment="Left"   FontSize="20"
+                            VerticalAlignment="Top" Width="100" Click="btnEnterUser_Click"/>
+
+                        <Button x:Name="btnDeleteUser" Content="Delete" HorizontalAlignment="Left"   FontSize="20"
+                            VerticalAlignment="Top" Width="100" Click="btnDeleteUser_Click"/>
+                    </StackPanel>
+
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="tabControlItemEditor"  Header="Editor">
+                <TextBox x:Name="textBox" Margin="0,0,0,0" KeyDown="textBox_KeyDown"/>
+            </TabItem>
+        </TabControl>
 
 
     </DockPanel>

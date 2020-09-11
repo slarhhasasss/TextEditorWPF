@@ -13,3 +13,5 @@ C:\Users\dimik\source\repos\ExampleWpf\ExampleWpf\obj\Debug\ExampleWpf.csproj.Ge
 C:\Users\dimik\source\repos\ExampleWpf\ExampleWpf\obj\Debug\ExampleWpf.csproj.CoreCompileInputs.cache
 C:\Users\dimik\source\repos\ExampleWpf\ExampleWpf\obj\Debug\ExampleWpf.exe
 C:\Users\dimik\source\repos\ExampleWpf\ExampleWpf\obj\Debug\ExampleWpf.pdb
+C:\Users\dimik\source\repos\ExampleWpf\ExampleWpf\obj\Debug\AuthPage.g.cs
+C:\Users\dimik\source\repos\ExampleWpf\ExampleWpf\obj\Debug\AuthPage.baml
